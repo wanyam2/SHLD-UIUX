@@ -15,3 +15,5 @@ export const ScoreCard = ({ icon, label, value }) => {
         </div>
     );
 };
+
+export default ScoreCard;

@@ -1,0 +1,121 @@
+.card {
+    border-radius: 4px;
+    background-color: #8c81f7;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 100%;
+    max-width: 366px;
+    height: 100%;
+    min-height: 586px;
+    flex-direction: column;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 28px 0;
+}
+
+.cardContent {
+    padding: 0 24px;
+}
+
+.headerSection {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.seatInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+.seatIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.seatNumber {
+    margin-top: 8px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.brightnessControl {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+}
+
+.brightnessIcon {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+    object-fit: contain;
+}
+
+.brightnessText {
+    margin-top: 8px;
+}
+
+.occupancyInfo {
+    align-self: flex-end;
+    margin-top: 53px;
+    min-height: 98px;
+    width: 116px;
+}
+
+.currentOccupancy,
+.totalCapacity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.currentOccupancy {
+    color: #fff;
+}
+
+.totalCapacity {
+    margin-top: 17px;
+    color: #000;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.value {
+    font-size: 32px;
+}
+
+.divider {
+    width: 342px;
+    max-width: 100%;
+    height: 1px;
+    margin: 23px 12px 0;
+    border: 1px solid #fff;
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+    max-width: 318px;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    margin: 40px 24px 0;
+}
+
+.verticalDivider {
+    width: 1px;
+    height: 34px;
+    border: 1px solid #fff;
+}

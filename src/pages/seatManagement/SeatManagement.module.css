@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    min-height: 844px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 12px;
+}
+
+.settingsIcon {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 10%;
+}
+
+.mainContent {
+    display: flex;
+    margin-top: 15px;
+    max-width: 366px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.tabBar {
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    width: 390px;
+    align-items: center;
+    gap: 74px;
+    justify-content: center;
+    right: 0;
+    bottom: 24px;
+    font: 500 14px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+}
