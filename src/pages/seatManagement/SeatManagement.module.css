@@ -1,20 +1,18 @@
 .wrapper {
     display: flex;
-    max-width: 480px;
-    width: 100%;
     flex-direction: column;
     margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
     background-color: #fff;
     position: relative;
     display: flex;
-    min-height: 844px;
-    width: 100%;
     flex-direction: column;
     overflow: hidden;
-    padding: 0 12px;
+    padding: 20px 12px;
 }
 
 .settingsIcon {
@@ -36,20 +34,24 @@
 .mainContent {
     display: flex;
     margin-top: 15px;
-    max-width: 366px;
+    max-width: 100%;
     width: 100%;
     flex-direction: column;
+    overflow: hidden;
+    padding-right: 12px;
+    box-sizing: border-box;
 }
 
 .tabBar {
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     display: flex;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     align-items: center;
     gap: 74px;
     justify-content: center;
-    right: 0;
-    bottom: 24px;
+    bottom: 0;
     font: 500 14px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+    padding: 12px 0;
 }
