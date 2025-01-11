@@ -1,0 +1,30 @@
+.filterButton {
+    border-radius: 24px;
+    min-height: 28px;
+    padding: 0 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 500 16px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+    background-color: #7368DE;
+    color: #BAB2FF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.active {
+    background-color: #FFFFFF;
+    color: #BAB2FF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.filterButton:focus {
+    outline: 2px solid #7368DE;
+    outline-offset: 2px;
+}
+
+.filterButton:focus:not(:focus-visible) {
+    outline: none;
+}

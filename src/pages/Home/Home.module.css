@@ -1,0 +1,281 @@
+.homeScreen {
+    border-radius: 48px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.userInfo {
+    flex: 1;
+}
+
+.greeting {
+    color: #5f6368;
+    font: 500 14px Pretendard, sans-serif;
+}
+
+.userName {
+    color: #000;
+    font: 700 24px Pretendard, sans-serif;
+    margin-top: 4px;
+}
+
+.avatarContainer {
+    border-radius: 54px;
+    border: 3px solid #8c81f7;
+    padding: 8px;
+}
+
+.avatarImage {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.statsContainer {
+    background-color: #f5f6fa;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+}
+
+.statItem {
+    text-align: center;
+    width: 82px;
+}
+
+.statLabel {
+    color: #5f6368;
+    font: 500 16px Pretendard, sans-serif;
+}
+
+.statValue {
+    color: #000;
+    font: 600 20px Pretendard, sans-serif;
+    margin-top: 8px;
+}
+
+.infoCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.seatCard, .noiseCard, .focusCard, .recordCard {
+    border-radius: 24px;
+    padding: 16px;
+    color: #fff;
+    display: block;
+}
+
+.seatCard {
+    background-color: #8c81f7;
+}
+
+.noiseCard {
+    background-color: #af8eff;
+}
+
+.cardHeader {
+    margin-bottom: 16px;
+}
+
+.cardTitle {
+    font: 700 22px Pretendard, sans-serif;
+    margin: 0;
+}
+
+.cardSubtitle {
+    font: 500 14px Pretendard, sans-serif;
+    margin: 4px 0 0;
+    opacity: 0.9;
+}
+
+.seatStatus {
+    text-align: center;
+}
+
+.seatChart {
+    margin-left: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+.percentage {
+    font: 700 24px Pretendard, sans-serif;
+    margin-top: 8px;
+}
+
+.statusText {
+    font: 500 14px Pretendard, sans-serif;
+    margin-top: 4px;
+}
+
+.noiseGraph {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    height: 120px;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.noiseBar {
+    width: 9px;
+    height: 21px;
+    background-color: #6b61d2;
+    border-radius: 6px;
+    transition: height 0.3s ease;
+}
+
+.noiseStatus {
+    text-align: center;
+}
+
+.noiseScore {
+    font: 700 24px Pretendard, sans-serif;
+}
+
+.noiseText {
+    font: 500 14px Pretendard, sans-serif;
+    margin-top: 4px;
+}
+
+.focusCard {
+    background-color: #434f6c;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.focusContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.focusChart {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 8px;
+}
+
+.recordCard {
+    background-color: #1e86f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.recordChart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chartImage {
+    width: 83px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.cardBackground {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 188px;
+    height: 56px;
+    background-color: #0f6acf;
+    border-radius: 0 0 24px 24px;
+}
+
+.focusScore {
+    font: 700 24px Pretendard, sans-serif;
+    text-align: center;
+}
+
+.navigation {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.navContainer {
+    background-color: #f4f3ff;
+    border-radius: 8px 8px 32px 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 48px;
+}
+
+.navItem {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.navItem:hover {
+    background-color: rgba(140, 129, 247, 0.1);
+}
+
+.navItem.active {
+    background-color: #8c81f7;
+}
+
+.navIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.navLabel {
+    font: 600 12px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+    .infoCards {
+        grid-template-columns: repeat(2, 1fr); /* 작은 화면에서도 2열로 유지 */
+    }
+}

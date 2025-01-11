@@ -1,0 +1,90 @@
+.container {
+    border-radius: 48px;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.scoreBoard {
+    border-radius: 48px;
+    background-color: #fff;
+    display: flex;
+    min-height: 956px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 24px 26px 40px;
+}
+
+.header {
+    width: 100%;
+}
+
+.backButton {
+    display: flex;
+    margin-top: 24px;
+    min-height: 32px;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.backIcon {
+    width: 16px;
+    aspect-ratio: 0.62;
+    object-fit: contain;
+}
+
+.goalHeading {
+    color: #000;
+    text-align: center;
+    margin-top: 24px;
+    font: 700 32px/48px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.statsSection {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statsGraph {
+    width: 249px;
+    aspect-ratio: 0.93;
+    object-fit: contain;
+}
+
+.scoreCards {
+    display: flex;
+    margin-top: 16px;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+
+.timelineSection {
+    background-color: #8C81F7;
+    border-radius: 24px;
+    margin-top: 24px;
+    padding: 24px;
+    flex: 1;
+}
+
+.filterGroup {
+    display: flex;
+    gap: 12px;
+}
+
+.timelineGraph {
+    width: 100%;
+    max-width: 313px;
+    aspect-ratio: 2.99;
+    object-fit: contain;
+    margin-top: 24px;
+}
