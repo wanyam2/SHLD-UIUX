@@ -1,0 +1,234 @@
+.seatLayout {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    max-width: none; /* 부모의 크기에 제한받지 않도록 */
+    width: auto; /* 자동 크기 조정 */
+    height: 100vh;
+    padding: 0 12px;
+    flex-direction: column;
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    overflow-y: hidden;
+    white-space: nowrap; /* 내부 요소가 줄 바꿈되지 않도록 */
+}
+
+.icon {
+    aspect-ratio: 1.3;
+    object-fit: contain;
+    object-position: center;
+    width: 26px;
+    margin-left: 370px;
+}
+
+.navigationBar {
+    z-index: 0;
+    display: flex;
+    flex-wrap: nowrap; /* 줄 바꿈 방지 */
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    white-space: nowrap; /* 내부 요소들이 한 줄로 유지 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.studyRoomContainer {
+    z-index: 0;
+    display: flex;
+    margin-top: 15px;
+    max-width: 378px;
+    flex-direction: column;
+    font-family: Pretendard, sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+
+.studyRoomScroll {
+    display: flex;
+    flex-wrap: nowrap; /* 줄 바꿈 방지 */
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.studyRoomScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.studyRoomCard {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    margin: auto 0;
+}
+
+.studyRoomActive {
+    border-radius: 3px;
+    background-color: #8c81f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 9px 3px;
+    border: 1px solid #8c81f7;
+    color: #fff;
+}
+
+.studyRoomInactive {
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 9px 3px;
+    border: 1px solid #a79efe;
+}
+
+.studyRoomTitle {
+    font-size: 12px;
+}
+
+.studyRoomCount {
+    font-size: 20px;
+}
+
+.seatMapContainer {
+    align-self: flex-start;
+    z-index: 0;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 40px 109px;
+}
+
+.seatMap {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    width: 372px;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 50px 6px 95px 10px;
+}
+
+.seat {
+    display: flex;
+    width: 34px;
+    flex-direction: column;
+    margin-top: 21px;
+}
+
+.seatBox {
+    border-radius: 0;
+    background-color: #d9d9d9;
+    display: flex;
+    height: 46px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seatBox:hover {
+    background-color: #8c81f7;
+}
+
+.seatBox[aria-selected="true"] {
+    background-color: #8c81f7;
+}
+
+.divider {
+    align-self: stretch;
+    width: 1px;
+    height: 456px;
+    border: 1px solid #fff;
+}
+
+.tabBar {
+    background-color: #fff;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 390px;
+    align-items: center;
+    gap: 40px 74px;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    right: 0;
+    bottom: 24px;
+    font: 500 14px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-right: 15px;
+}
+
+.tabItem {
+    flex: 0 0 auto; /* 크기 고정 */
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.tabItem:hover {
+    opacity: 0.8;
+}
+
+.tabIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: center;
+}
+
+.seatInfo {
+    box-shadow: -3px 12px 34px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    max-width: 100%;
+    width: 383px;
+    flex-direction: column;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 374px;
+    font: 400 16px Inter, sans-serif;
+}
+
+.reportButton {
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 366px;
+    max-width: 100%;
+    gap: 20px;
+    overflow: hidden;
+    color: #000;
+    white-space: nowrap;
+    right: 8px;
+    bottom: 22px;
+    height: 56px;
+    padding: 0 32px 0 8px;
+    font: 500 24px Pretendard, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
