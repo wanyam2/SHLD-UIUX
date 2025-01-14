@@ -1,0 +1,39 @@
+.severityOption {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.optionWrapper {
+    border-radius: 0;
+    align-self: center;
+    display: flex;
+    width: 90px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.optionBox {
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    padding: 0 9px;
+    border: 1px solid #8c81f7;
+}
+
+.selected {
+    background-color: #8c81f7;
+}
+
+.indicator {
+    border-radius: 50%;
+    display: flex;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #8c81f7;
+}
