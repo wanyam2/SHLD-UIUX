@@ -57,12 +57,13 @@
     border-radius: 24px;
     display: flex;
     justify-content: space-between;
-    padding: 24px 16px;
+    padding: 16px;
 }
 
 .statItem {
     text-align: center;
-    width: 82px;
+    flex: 1 1 0;
+    min-width: 64px;
 }
 
 .statLabel {
@@ -118,9 +119,10 @@
 }
 
 .seatChart {
-    margin-left: 50px;
-    width: 90px;
-    height: 90px;
+    margin-left: 0;
+    width: 25vw;
+    max-width: 120px;
+    height: auto;
 }
 
 .percentage {
@@ -137,7 +139,8 @@
     display: flex;
     gap: 6px;
     align-items: flex-end;
-    height: 120px;
+    height: 24vh;
+    max-height: 140px;
     justify-content: center;
     margin: 16px 0;
 }
@@ -236,12 +239,12 @@
     border-radius: 8px 8px 32px 32px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 48px;
+    padding: 10px 24px;
 }
 
 .navItem {
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,8 +266,8 @@
 }
 
 .navIcon {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
 }
 
@@ -274,8 +277,27 @@
     margin-top: 4px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .statsContainer {
+        gap: 8px;
+        padding: 12px;
+    }
+    .cardTitle { font-size: 18px; }
+    .cardSubtitle { font-size: 12px; }
+    .percentage, .noiseScore, .focusScore { font-size: 20px; }
+}
+
+@media (max-width: 600px) {
     .infoCards {
-        grid-template-columns: repeat(2, 1fr); /* 작은 화면에서도 2열로 유지 */
+        grid-template-columns: 1fr;
+    }
+    .navContainer {
+        padding: 10px 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .infoCards {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
