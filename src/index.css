@@ -24,10 +24,21 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Global responsive defaults */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Breakpoints */
+:root {
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
 }
 
 h1 {
